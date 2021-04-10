@@ -3,7 +3,6 @@ pipeline {
    
     environment {
         PASS = credentials('docker-password')
-        SSH_KEY = credentials(raghib-key.pem)
     }
     stages {
         stage('Build') { 
